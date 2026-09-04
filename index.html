@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="FF Sensi Store - Free Fire sensitivity settings.">
+<title>FF Sensi Store | Official Store</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#070707;--card:#111;--accent:#ffd400;--text:#fff;--muted:#aaa}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1100px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(7,7,7,.94);backdrop-filter:blur(10px);border-bottom:1px solid #242424}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:22px;font-weight:900}.logo span{color:var(--accent)}
+nav a{margin-left:22px;color:#ddd;font-size:14px}
+nav a:hover{color:var(--accent)}
+.hero{padding:85px 0 70px;text-align:center;background:radial-gradient(circle at top,#292300 0,#070707 48%)}
+.badge{display:inline-block;border:1px solid #665600;color:var(--accent);padding:7px 13px;border-radius:99px;font-size:12px;font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(38px,8vw,72px);line-height:1.05;margin-bottom:18px}
+h1 span{color:var(--accent)}
+.hero p{max-width:650px;margin:0 auto 28px;color:var(--muted)}
+.btn{display:inline-block;background:var(--accent);color:#000;font-weight:900;padding:13px 22px;border-radius:10px;margin:5px}
+.btn.alt{background:#171717;color:#fff;border:1px solid #333}
+section{padding:70px 0}
+.title{text-align:center;margin-bottom:35px}
+.title h2{font-size:34px}.title p{color:var(--muted);margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.card{background:linear-gradient(145deg,#151515,#0d0d0d);border:1px solid #292929;border-radius:18px;padding:24px;transition:.2s}
+.card:hover{transform:translateY(-4px);border-color:#625400}
+.card .icon{font-size:30px}.card h3{margin:12px 0 5px}.price{font-size:27px;font-weight:900;color:var(--accent);margin:12px 0}
+.card p{color:var(--muted);font-size:14px;min-height:44px}
+.steps{counter-reset:step}.step{position:relative;padding:24px 24px 24px 62px}
+.step:before{counter-increment:step;content:counter(step);position:absolute;left:20px;top:24px;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#000;font-weight:900}
+.review{font-size:14px}.stars{color:var(--accent);letter-spacing:2px}
+.cta{text-align:center;background:#111;border-top:1px solid #242424;border-bottom:1px solid #242424}
+footer{padding:30px 0;text-align:center;color:#777;font-size:13px}
+.small{font-size:12px;color:#666;margin-top:10px}
+@media(max-width:650px){nav{display:none}.nav{justify-content:center}.hero{padding-top:65px}section{padding:55px 0}}
+
+.payment-box{max-width:430px;margin:auto;text-align:center;background:linear-gradient(145deg,#151515,#0d0d0d);border:1px solid #292929;border-radius:20px;padding:24px}
+.qr-wrap{background:#fff;border-radius:14px;padding:12px;width:min(100%,360px);margin:0 auto 20px}
+.qr-wrap img{display:block;width:100%;height:auto;border-radius:7px}
+.payment-box h3{font-size:24px;margin-bottom:8px}
+.payment-note{color:var(--muted);font-size:14px;margin-bottom:18px}
+
+.payment-box{max-width:500px;margin:auto;background:linear-gradient(145deg,#151515,#0d0d0d);border:1px solid #292929;border-radius:20px;padding:24px}
+.payment-box label{display:block;margin:12px 0 6px;font-size:13px;color:#ddd}
+.payment-box input{width:100%;padding:13px 14px;border-radius:10px;border:1px solid #333;background:#080808;color:#fff;outline:none}
+.payment-box input:focus{border-color:var(--accent)}
+.payment-box #payBtn{width:100%;margin:20px 0 5px}
+#paymentStatus{min-height:22px}
+button.btn{border:0;cursor:pointer;font:inherit}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#">FF <span>SENSI STORE</span></a>
+    <nav>
+      <a href="#plans">Plans</a>
+      <a href="#how">How It Works</a>
+      <a href="#reviews">Reviews</a><a href="#payment">Payment</a>
+      <a href="#order">Order</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container">
+    <div class="badge">🎯 FREE FIRE SENSITIVITY STORE</div>
+    <h1>Play Better.<br><span>Find Your Sensi.</span></h1>
+    <p>Get sensitivity settings for Headshot, Brazilian, YouTuber/Player and custom setups. Fast service with simple ordering.</p>
+    <a class="btn" href="#plans">View Plans</a>
+    <a class="btn alt" href="https://instagram.com/ff_sensi_seller_1" target="_blank">DM on Instagram</a>
+  </div>
+</section>
+
+<section id="plans">
+  <div class="container">
+    <div class="title"><h2>🔥 Sensitivity Plans</h2><p>Choose the setup that fits you.</p></div>
+    <div class="grid">
+      <div class="card"><div class="icon">🎯</div><h3>Headshot Sensi</h3><div class="price">₹79</div><p>Balanced setup for headshot practice.</p><button class="btn buy-btn" data-plan="headshot">Buy Now</button></div>
+      <div class="card"><div class="icon">🇧🇷</div><h3>Brazilian Sensi</h3><div class="price">₹89</div><p>Fast and responsive sensitivity setup.</p><button class="btn buy-btn" data-plan="brazilian">Buy Now</button></div>
+      <div class="card"><div class="icon">🎮</div><h3>YouTuber / Player</h3><div class="price">₹99+</div><p>Request a setup inspired by your chosen player.</p><button class="btn buy-btn" data-plan="player">Buy Now</button></div>
+      <div class="card"><div class="icon">⚡</div><h3>Custom Sensi</h3><div class="price">₹129</div><p>Custom setup based on your device and play style.</p><button class="btn buy-btn" data-plan="custom">Buy Now</button></div>
+      <div class="card"><div class="icon">👑</div><h3>Premium Pack</h3><div class="price">₹159</div><p>Premium sensitivity package with extra guidance.</p><button class="btn buy-btn" data-plan="premium">Buy Now</button></div>
+    </div>
+    <p class="small">*Results can vary by device, controls and player. No guaranteed headshots.</p>
+  </div>
+</section>
+
+<section id="how">
+  <div class="container">
+    <div class="title"><h2>⚡ How It Works</h2><p>Simple 3-step process</p></div>
+    <div class="grid">
+      <div class="card step"><h3>Choose a plan</h3><p>Select the sensitivity you want.</p></div>
+      <div class="card step"><h3>Send your details</h3><p>DM your device/model and selected plan.</p></div>
+      <div class="card step"><h3>Receive & apply</h3><p>You'll receive the settings and can test them in Training Ground.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="container">
+    <div class="title"><h2>⭐ Customer Reviews</h2><p>Add your genuine customer reviews here.</p></div>
+    <div class="grid">
+      <div class="card review"><div class="stars">★★★★★</div><p>“Settings received and easy to apply. Thanks!”</p><br><b>— Customer</b></div>
+      <div class="card review"><div class="stars">★★★★★</div><p>“Fast response and clear instructions.”</p><br><b>— Customer</b></div>
+      <div class="card review"><div class="stars">★★★★★</div><p>“Good service. I tested the settings in training.”</p><br><b>— Customer</b></div>
+    </div>
+    <p class="small">Only publish real customer feedback—don't use fake reviews.</p>
+  </div>
+</section>
+
+
+
+<section id="checkout">
+  <div class="container">
+    <div class="title"><h2>💳 Secure Checkout</h2><p>Select a plan, enter your details, and pay securely.</p></div>
+    <div class="payment-box">
+      <label for="customerName">Name</label>
+      <input id="customerName" type="text" placeholder="Your name" maxlength="80">
+      <label for="customerEmail">Email</label>
+      <input id="customerEmail" type="email" placeholder="you@example.com" maxlength="120">
+      <label for="customerPhone">Phone</label>
+      <input id="customerPhone" type="tel" placeholder="10-digit mobile number" maxlength="15">
+      <label for="playerName">YouTuber / Player name (optional)</label>
+      <input id="playerName" type="text" placeholder="Only if you chose Player Sensi" maxlength="80">
+      <button class="btn" id="payBtn">PAY NOW</button>
+      <div id="paymentStatus" class="payment-note"></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="order">
+  <div class="container">
+    <div class="title"><h2>📩 Ready to Order?</h2><p>Send a DM with the plan you want.</p></div>
+    <a class="btn" href="https://instagram.com/ff_sensi_seller_1" target="_blank">ORDER ON INSTAGRAM</a>
+    <p class="small">Instagram: @ff_sensi_seller_1</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">© 2026 FF Sensi Store • Gaming sensitivity service</div>
+</footer>
+
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+const PLAN_PRICES = {
+  headshot: {name:"Headshot Sensi", amount:7900},
+  brazilian: {name:"Brazilian Sensi", amount:8900},
+  player: {name:"YouTuber / Player Sensi", amount:9900},
+  custom: {name:"Custom Sensi", amount:12900},
+  premium: {name:"Premium Sensi Pack", amount:15900}
+};
+let selectedPlan = "headshot";
+
+document.querySelectorAll(".buy-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    selectedPlan = btn.dataset.plan;
+    document.getElementById("checkout").scrollIntoView({behavior:"smooth"});
+    document.getElementById("paymentStatus").textContent =
+      "Selected: " + PLAN_PRICES[selectedPlan].name + " — ₹" + (PLAN_PRICES[selectedPlan].amount/100);
+  });
+});
+
+document.getElementById("payBtn").addEventListener("click", async () => {
+  const status = document.getElementById("paymentStatus");
+  const name = document.getElementById("customerName").value.trim();
+  const email = document.getElementById("customerEmail").value.trim();
+  const phone = document.getElementById("customerPhone").value.trim();
+  const playerName = document.getElementById("playerName").value.trim();
+
+  if (!name || !email || !phone) {
+    status.textContent = "Please fill name, email and phone.";
+    return;
+  }
+
+  status.textContent = "Creating secure order…";
+
+  try {
+    const res = await fetch("/api/create-order", {
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({plan:selectedPlan,name,email,phone,playerName})
+    });
+    const order = await res.json();
+    if (!res.ok) throw new Error(order.error || "Could not create order.");
+
+    const options = {
+      key: order.keyId,
+      amount: order.amount,
+      currency: "INR",
+      name: "FF Sensi Store",
+      description: order.planName,
+      order_id: order.orderId,
+      prefill: {name, email, contact: phone},
+      theme: {color: "#ffd400"},
+      handler: async function (response) {
+        status.textContent = "Payment received. Verifying securely…";
+        const verify = await fetch("/api/verify-payment", {
+          method:"POST",
+          headers:{"Content-Type":"application/json"},
+          body:JSON.stringify(response)
+        });
+        const result = await verify.json();
+        if (verify.ok && result.verified) {
+          status.textContent = "✅ Payment verified. Order ID: " + order.orderId;
+        } else {
+          status.textContent = "Payment was completed, but verification is still pending. Please keep your order ID: " + order.orderId;
+        }
+      },
+      modal:{ondismiss:function(){status.textContent="Payment window closed. Your order was not marked paid."}}
+    };
+
+    const rzp = new Razorpay(options);
+    rzp.on("payment.failed", () => {
+      status.textContent = "❌ Payment failed. Please try again.";
+    });
+    rzp.open();
+  } catch (e) {
+    status.textContent = "❌ " + e.message;
+  }
+});
+</script>
+
+</body>
+</html>
